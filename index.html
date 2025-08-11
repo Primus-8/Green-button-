@@ -2,58 +2,49 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Instagram Button</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Instagram</title>
+
+  <!-- Manifest link -->
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#00a000">
+
   <style>
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background: white;
       margin: 0;
-      background-color: #f5f5f5;
     }
-    .circle-btn {
+    button {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       background-color: green;
+      color: white;
       border: none;
+      font-size: 16px;
       cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: transform 0.2s;
-      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABQElEQVR4nO3YwQnCMBAF0XcqPwc2mYDYcShHnDuz3IZgYH1y7AJ0Bp7E8sC0B/C5QY/f3QpAA0AADQAA0AADQAA0AACwgL1pr6j0x84QGcl8Xb+0OsmKHfDvtK84utttbXROy4JZ2/wLPuc3kXvGzZgd2ztQZyvav0lI6EoFfA8Z3wCVnd/hDkDJNnCtizESoDZ/j06t6NUI4skpQ1Amk2KwG65aqtAtlmTkDQLYDRJmmfHfXGgLdRPlFZ2USmWwMkn8iG7cm3WAX9Y1uNLR2Vt1MDYccz9aAAaAAGgABoAAaAAGgABoABpA+8A58G/1BzvL3/PL1nfw/XrUsXj2lmVPhJhn4q6ytJ7ADQAA0AADQAA0AADQAA0AADQAA/wAljcG+qTr+ZQAAAABJRU5ErkJggg==');
-      background-size: 60% 60%;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .circle-btn:active {
-      transform: scale(0.95);
     }
   </style>
 </head>
 <body>
+  <button onclick="openInstagram()">Open Instagram</button>
 
-<button class="circle-btn" id="instaBtn"></button>
+  <script>
+    function openInstagram() {
+      window.location.href = "instagram://user?username=sudama_yaduvansh";
+      // fallback agar app na ho to browser me open ho
+      setTimeout(() => {
+        window.location.href = "https://instagram.com/sudama_yaduvansh";
+      }, 1000);
+    }
 
-<script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js");
-  }
-
-  document.getElementById("instaBtn").addEventListener("click", function () {
-    const username = "sudama_yaduvansh"; // Your Instagram username
-
-    // Try opening Instagram app
-    window.location.href = `instagram://user?username=${username}`;
-
-    // Fallback: open Instagram website
-    setTimeout(() => {
-      window.location.href = `https://instagram.com/${username}`;
-    }, 1000);
-  });
-</script>
-
+    // Service worker register
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
