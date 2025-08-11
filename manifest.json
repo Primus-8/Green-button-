@@ -1,0 +1,20 @@
+{
+  "name": "Instagram Shortcut",
+  "short_name": "Instagram",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#00a000",
+  "icons": [
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABQElEQVR4nO3YwQnCMBAF0XcqPwc2mYDYcShHnDuz3IZgYH1y7AJ0Bp7E8sC0B/C5QY/f3QpAA0AADQAA0AADQAA0AACwgL1pr6j0x84QGcl8Xb+0OsmKHfDvtK84utttbXROy4JZ2/wLPuc3kXvGzZgd2ztQZyvav0lI6EoFfA8Z3wCVnd/hDkDJNnCtizESoDZ/j06t6NUI4skpQ1Amk2KwG65aqtAtlmTkDQLYDRJmmfHfXGgLdRPlFZ2USmWwMkn8iG7cm3WAX9Y1uNLR2Vt1MDYccz9aAAaAAGgABoAAaAAGgABoABpA+8A58G/1BzvL3/PL1nfw/XrUsXj2lmVPhJhn4q6ytJ7ADQAA0AADQAA0AADQAA0AADQAA/wAljcG+qTr+ZQAAAABJRU5ErkJggg==",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABQElEQVR4nO3YwQnCMBAF0XcqPwc2mYDYcShHnDuz3IZgYH1y7AJ0Bp7E8sC0B/C5QY/f3QpAA0AADQAA0AADQAA0AACwgL1pr6j0x84QGcl8Xb+0OsmKHfDvtK84utttbXROy4JZ2/wLPuc3kXvGzZgd2ztQZyvav0lI6EoFfA8Z3wCVnd/hDkDJNnCtizESoDZ/j06t6NUI4skpQ1Amk2KwG65aqtAtlmTkDQLYDRJmmfHfXGgLdRPlFZ2USmWwMkn8iG7cm3WAX9Y1uNLR2Vt1MDYccz9aAAaAAGgABoAAaAAGgABoABpA+8A58G/1BzvL3/PL1nfw/XrUsXj2lmVPhJhn4q6ytJ7ADQAA0AADQAA0AADQAA0AADQAA/wAljcG+qTr+ZQAAAABJRU5ErkJggg==",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
